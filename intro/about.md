@@ -1,6 +1,23 @@
 !SLIDE bullets
 
+# About psadmin.io
+
+* Blog
+* Podcast
+* Community
+* Training
+* Coaching
+
+!SLIDE bullets
+
 # Kyle Benson
+
+* Kyle Benson
+* 10+ years in PeopleSoft
+* Automation/DPK
+* Life Cycle Management
+* Fluid Navigation
+* Oracle ACE
 
 !SLIDE bullets
 
@@ -9,14 +26,4 @@
 * PeopleSoft Administrator
 * Developer, Tech Lead, Project Manager
 * Oracle ACE
-* Started with PeopleTools 8.43
-
-!SLIDE bullets
-
-# About psadmin.io
-
-* Blog
-* Podcast
-* Community
-* Training
-* Coaching
+* 15+ Years with PeopleSoft
