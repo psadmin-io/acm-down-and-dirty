@@ -14,7 +14,8 @@
     "intro/agenda.md",
     "topic/acm.md",
     "topic/refresh.md",
-    "topic/dpk/md",
-    "topic/custom.md"
+    "topic/dpk.md",
+    "topic/custom.md",
+    "intro/closing.md"
   ]
 }

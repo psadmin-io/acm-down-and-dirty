@@ -6,10 +6,10 @@
 
 # Custom Plugins
 
-1. We can write plugins in PeopleCode! 
-1. Lots of boiler plate code
-1. Extend `PTEM_CONFIG:EMConfigurationPlugin` App Package
-1. App Package Name requires `PTEM_CONFIG` at the beginning
+* We can write plugins in PeopleCode! 
+* Lots of boiler plate code
+* Extend `PTEM_CONFIG:EMConfigurationPlugin` App Package
+* App Package Name requires `PTEM_CONFIG` at the beginning
 
 !SLIDE bullets
 
@@ -29,16 +29,33 @@ To create a custom plugin, create a new Application Package that starts with `PT
 ACM often uses CI's where possible to ensure that business logic is used when configuring the system.
 ~~~ENDSECTION~~~
 
+!SLIDE bullets
+
+# ACM Plugin Development
+
+* Use Component Interfaces where possible
+* Direct SQL as a last resort
+* Small, reusable plugins
+* Leverage existing plugin code
+
 !SLIDE center subsection blue
 
 # Demo
+
+~~~SECTION:notes~~~
+Build the truncate tables ACM plugin.
+
+1. Paste in boiler plate code
+1. Paste in the code for truncating
+1. Paste in the code for validating the properties (tablelist)
+~~~ENDSECTION~~~
+
 
 !SLIDE bullets
 
 # ACM Plugin Development
 
-1. psadmin.io ACM Repository - github.com/psadmin-io
-1. PeopleTools Idea: ACM Export to YAML (19985)
-1. PeopleTools Idea: App Designer Copy to File (12562)
-1. "Hidden" ACM Plugins - peoplesoftmods.com/psadmin/hidden-acm-plugins
-
+* psadmin.io ACM Repository - github.com/psadmin-io
+* PeopleTools Idea: ACM Export to YAML (19985)
+* PeopleTools Idea: App Designer Copy to File (12562)
+* "Hidden" ACM Plugins - peoplesoftmods.com/psadmin/hidden-acm-plugins

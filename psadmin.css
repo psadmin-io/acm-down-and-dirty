@@ -119,3 +119,13 @@ code {
 #hamburger:hover {
   background-color: #1392FE;
 }
+
+.bullets > ul > li {
+  text-align: left !important;
+  padding: 0px !important;
+}
+
+.bullets ul {
+  list-style: disc !important;
+  padding-left: 0px;
+}
