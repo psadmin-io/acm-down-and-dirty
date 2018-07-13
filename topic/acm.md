@@ -1,0 +1,161 @@
+!SLIDE center subsection blue
+
+# What is the ACM?
+
+!SLIDE bullets
+
+# Automated Configuration Management
+
+1. PeopleSoft Cloud Architecture
+  1. Deployment Packages
+  1. Automate Configuration Management
+1. DPK => Servers
+1. ACM => Database
+
+~~~SECTION:notes~~~
+The ACM is one half of the PCA; DPK is the other half
+
+~~~ENDSECTION~~~
+
+
+!SLIDE bullets
+
+# Automated Configuration Management
+
+1. ACM is an App Engine - PTEM_CONFIG
+1. ACM Plugins are Application Packages
+1. ACM Templates define configuration
+1. Template stored:
+  1. Database
+  1. Properties file
+  1. YAML
+
+!SLIDE bullets
+
+# ACM Releases
+
+1. Beta product in 8.53
+1. PIA Configuration in 8.54
+1. DPK Integration in 8.55
+1. Additional Plugins in 8.56
+
+~~~SECTION:notes~~~
+The ACM started out as a beta product in 8.53. There were limited options, and you could only use a properties file. You had to call the ACM via the command line with `psae`.
+
+8.54 introduced the PIA application to configure ACM templates. You could also test and run the ACM from the PIA along with the command line. This was the big release for ACM.
+
+With 8.55, the ACM was bundle into the DPK to become the PeopleSoft Cloud Architecture. It was leveraged for PeopleSoft Image deployments to configure the IB, Report Nodes, Web Profile and more. 
+
+8.56 didn't introduce any big changes to ACM, but there are new plugins and can show that the ACM platform is stabilizing. The big gap now is to build up the list of Plugins
+~~~ENDSECTION~~~
+
+
+!SLIDE bullets incremental
+
+# ACM Advantages
+
+1. ACM Plugins are PeopleCode and SQL
+1. Access to IB, Search and more
+1. Define configuration in database
+1. Run via command line and PIA
+1. Write your own plugins
+
+!SLIDE bullets incremental
+
+# ACM Limitations
+
+1. Plugins designed for PeopleSoft Images
+1. Not all configuration available in ACM
+1. Delivered plugins are not idempotent
+
+~~~SECTION:notes~~~
+The plugins work well in the PI build, but that doesn't always work for you. 
+Missing some functionality with ACM plugins.
+ACM plugins are not idempotent - something that is important when running the ACM via the DPK
+~~~ENDSECTION~~~
+
+!SLIDE bullets
+
+# ACM Scope
+
+1. PeopleTools
+    1. Integration Broker
+    1. Search Framework
+    1. Process Scheduler
+    1. More!
+1. Application
+    1. AWE Configuration
+    1. URLs
+    1. ePro
+    1. More!
+
+!SLIDE bullets incremental
+
+# ACM Templates
+
+1. Templates stored in database
+1. Logical groups of configuration
+1. Secure templates by Permission List
+
+~~~SECTION:notes~~~
+Templates are a PL security item, so you could offer template access to some users. Maybe you have an ePro ACM plugin that functional users can run to reset config after testing.
+~~~ENDSECTION~~~
+
+!SLIDE bullets
+
+# ACM Templates
+
+Navigate PeopleTools > Automated Config Manager > ACM Templates > Template Definition
+
+![ACM Search Template](../_images/acm_search01.png)
+
+~~~SECTION:notes~~~
+The templates let you group plugins how you see best. You can include a single plugin, or multiple plugins in multiple groups.
+~~~ENDSECTION~~~
+
+
+!SLIDE bullets
+
+# ACM Templates
+
+![ACM Search Template](../_images/acm_search02.png)
+
+~~~SECTION:notes~~~
+Each plugin has properties you fill out. This is the configuration the ACM will apply.
+
+On the right-hand side, you can see the variables available to the ACM template.
+~~~ENDSECTION~~~
+
+!SLIDE bullets
+
+# ACM Plugins
+
+`PTEM_CONFIG` is the app engine behind Automated Configuration Management. `PTEM_CONFIG` runs ACM Plugins to configure the system.
+
+1. Plugins are App Packages
+    1. SQL
+    1. PeopleCode
+    1. Component Interfaces
+
+
+!SLIDE bullets
+
+# ACM Processing
+
+There are two types of ACM Plugins: 
+
+1. Preboot Plugins
+1. Postboot Plugins
+
+Preboot plugins can be run at anytime and do not require a running domain.
+
+Postboot plugins require a running domain (web and app servers).
+
+
+~~~SECTION:notes~~~
+
+* Idempotency
+* Refresh replacement? Not yet
+* Use strategicly with refresh (Redeploy ES and Indexes)
+~~~ENDSECTION~~~
+
