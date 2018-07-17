@@ -40,7 +40,7 @@ But, once the database is online, you can use the ACM to perform your refresh st
   1. IMP - Import Template
   1. EXP - Export Template
 
-!SLIDE center subsection blue
+!SLIDE center subsection grey
 
 # Demo
 

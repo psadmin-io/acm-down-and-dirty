@@ -81,7 +81,7 @@ You can also add/remove the ACM profiles from DPK roles
 1. `Class['::pt_profile::pt_tools_preboot_config'] ->`
 1. `Class['::pt_profile::pt_tools_postboot_config'] ->`
 
-!SLIDE center subsection blue
+!SLIDE center subsection grey
 
 # Demo
 

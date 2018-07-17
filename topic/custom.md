@@ -38,7 +38,7 @@ ACM often uses CI's where possible to ensure that business logic is used when co
 * Small, reusable plugins
 * Leverage existing plugin code
 
-!SLIDE center subsection blue
+!SLIDE center subsection grey
 
 # Demo
 
