@@ -161,7 +161,7 @@ Preboot plugins can be run at anytime and do not require a running domain.
 
 Postboot plugins require a running domain (web and app servers).
 
-!SLIDE center subsection blue
+!SLIDE center subsection grey
 
 # Demo
 
